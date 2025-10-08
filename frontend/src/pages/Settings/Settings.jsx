@@ -23,31 +23,31 @@ export default function Settings() {
   const content = [
     {
       key: 'general_settings',
-      label: translate('General Settings'),
+      label: translate('Paramètres généraux'),
       icon: <SettingOutlined />,
       children: <GeneralSettings />,
     },
     {
       key: 'company_settings',
-      label: translate('Company Settings'),
+      label: translate('Paramètres de la société'),
       icon: <TrophyOutlined />,
       children: <CompanySettings />,
     },
     {
       key: 'company_logo',
-      label: translate('Company Logo'),
+      label: translate('Logo de la société'),
       icon: <FileImageOutlined />,
       children: <CompanyLogoSettings />,
     },
     {
       key: 'currency_settings',
-      label: translate('Currency Settings'),
+      label: translate('Paramètres de la devise'),
       icon: <DollarOutlined />,
       children: <MoneyFormatSettings />,
     },
     {
       key: 'finance_settings',
-      label: translate('Finance Settings'),
+      label: translate('Paramètres financiers'),
       icon: <CreditCardOutlined />,
       children: <FinanceSettings />,
     },

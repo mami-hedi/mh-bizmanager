@@ -7,23 +7,23 @@ const About = () => {
   return (
     <Result
       status="info"
-      title={'IDURAR'}
-      subTitle={translate('Do you need help on customize of this app')}
+      title={'MH Digital Solution'}
+      subTitle={translate('Souhaitez-vous de l’aide pour personnaliser cette application ?')}
       extra={
         <>
           <p>
-            Website : <a href="https://www.idurarapp.com">www.idurarapp.com</a>{' '}
+            Website : <a href="https://www.mh-digital-solution.com/">www.mh-digital-solution.com</a>{' '}
           </p>
           <p>
             GitHub :{' '}
-            <a href="https://github.com/idurar/idurar-erp-crm">
-              https://github.com/idurar/idurar-erp-crm
+            <a href="https://github.com/mami-hedi/mh-bizmanager/">
+              https://github.com/mami-hedi/mh-bizmanager/
             </a>
           </p>
           <Button
             type="primary"
             onClick={() => {
-              window.open(`https://www.idurarapp.com/contact-us/`);
+              window.open(`https://www.mh-digital-solution.com/contact/`);
             }}
           >
             {translate('Contact us')}

@@ -22,7 +22,7 @@ export default function UpgradeButton() {
         }}
         icon={<RocketOutlined />}
         onClick={() => {
-          window.open(`https://entreprise.idurarapp.com`);
+          window.open(`https://www.mh-digital-solution.com/`);
         }}
       >
         {translate('Try Entreprise Version')}
@@ -32,5 +32,5 @@ export default function UpgradeButton() {
 }
 
 console.log(
-  '🚀 Welcome to IDURAR ERP CRM! Did you know that we also offer commercial customization services? Contact us at hello@idurarapp.com for more information.'
+  '🚀 Welcome to MH BizManager! Did you know that we also offer commercial customization services? Contact us at contact@mh-digital-solution.com for more information.'
 );

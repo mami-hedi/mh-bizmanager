@@ -5,8 +5,8 @@ import { Button, Drawer, Layout, Menu } from 'antd';
 import { useAppContext } from '@/context/appContext';
 
 import useLanguage from '@/locale/useLanguage';
-import logoIcon from '@/style/images/logo-icon.svg';
-import logoText from '@/style/images/logo-text.svg';
+import logoIcon from '@/style/images/logo.png';
+
 
 import useResponsive from '@/hooks/useResponsive';
 
@@ -57,28 +57,28 @@ function Sidebar({ collapsible, isMobile = false }) {
     {
       key: 'customer',
       icon: <CustomerServiceOutlined />,
-      label: <Link to={'/customer'}>{translate('customers')}</Link>,
+      label: <Link to={'/customer'}>{translate('Clients')}</Link>,
     },
 
     {
       key: 'invoice',
       icon: <ContainerOutlined />,
-      label: <Link to={'/invoice'}>{translate('invoices')}</Link>,
+      label: <Link to={'/invoice'}>{translate('Factures')}</Link>,
     },
     {
       key: 'quote',
       icon: <FileSyncOutlined />,
-      label: <Link to={'/quote'}>{translate('quote')}</Link>,
+      label: <Link to={'/quote'}>{translate('Devis')}</Link>,
     },
     {
       key: 'payment',
       icon: <CreditCardOutlined />,
-      label: <Link to={'/payment'}>{translate('payments')}</Link>,
+      label: <Link to={'/payment'}>{translate('paiements')}</Link>,
     },
 
     {
       key: 'paymentMode',
-      label: <Link to={'/payment/mode'}>{translate('payments_mode')}</Link>,
+      label: <Link to={'/payment/mode'}>{translate('Mode de paiements')}</Link>,
       icon: <WalletOutlined />,
     },
     {
@@ -88,12 +88,12 @@ function Sidebar({ collapsible, isMobile = false }) {
     },
     {
       key: 'generalSettings',
-      label: <Link to={'/settings'}>{translate('settings')}</Link>,
+      label: <Link to={'/settings'}>{translate('Paramètres')}</Link>,
       icon: <SettingOutlined />,
     },
     {
       key: 'about',
-      label: <Link to={'/about'}>{translate('about')}</Link>,
+      label: <Link to={'/about'}>{translate('A propos')}</Link>,
       icon: <ReconciliationOutlined />,
     },
   ];
@@ -145,26 +145,22 @@ function Sidebar({ collapsible, isMobile = false }) {
       theme={'light'}
     >
       <div
-        className="logo"
-        onClick={() => navigate('/')}
-        style={{
-          cursor: 'pointer',
-        }}
-      >
-        <img src={logoIcon} alt="Logo" style={{ marginLeft: '-5px', height: '40px' }} />
+  className="logo"
+  onClick={() => navigate('/')}
+  style={{
+    cursor: 'pointer',
+  }}
+>
+  <img
+    src={logoIcon}
+    alt="Logo"
+    style={{
+      justifyContent: 'flex-start',
+      height: '75px',
+    }}
+  />
+</div>
 
-        {!showLogoApp && (
-          <img
-            src={logoText}
-            alt="Logo"
-            style={{
-              marginTop: '3px',
-              marginLeft: '10px',
-              height: '38px',
-            }}
-          />
-        )}
-      </div>
       <Menu
         items={items}
         mode="inline"
