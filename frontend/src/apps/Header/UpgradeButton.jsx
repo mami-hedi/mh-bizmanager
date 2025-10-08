@@ -25,7 +25,7 @@ export default function UpgradeButton() {
           window.open(`https://www.mh-digital-solution.com/`);
         }}
       >
-        {translate('Try Entreprise Version')}
+        {translate('MH Digital Solution')}
       </Button>
     </Badge>
   );

@@ -19,54 +19,54 @@ const colours = {
 
 const defaultStatistics = [
   {
-    tag: 'draft',
+    tag: 'Brouillon',
     value: 0,
   },
   {
-    tag: 'pending',
+    tag: 'En attente',
     value: 0,
   },
   {
-    tag: 'sent',
+    tag: 'Envoyé',
     value: 0,
   },
   {
-    tag: 'accepted',
+    tag: 'Accepté',
     value: 0,
   },
   {
-    tag: 'declined',
+    tag: 'Refusé',
     value: 0,
   },
   {
-    tag: 'expired',
+    tag: 'Expiré',
     value: 0,
   },
 ];
 
 const defaultInvoiceStatistics = [
   {
-    tag: 'draft',
+    tag: 'Brouillon',
     value: 0,
   },
   {
-    tag: 'pending',
+    tag: 'En attente',
     value: 0,
   },
   {
-    tag: 'overdue',
+    tag: 'En retard',
     value: 0,
   },
   {
-    tag: 'paid',
+    tag: 'Payé',
     value: 0,
   },
   {
-    tag: 'unpaid',
+    tag: 'Non Payé',
     value: 0,
   },
   {
-    tag: 'partially',
+    tag: 'Partiellement payé',
     value: 0,
   },
 ];

@@ -19,7 +19,7 @@ export default function CustomerPreviewCard({
           }}
         >
           <h3 style={{ color: '#333', marginBottom: 40, marginTop: 15, fontSize: 'large' }}>
-            {translate('Customers')}
+            {translate('Clients')}
           </h3>
 
           {isLoading ? (
@@ -32,10 +32,10 @@ export default function CustomerPreviewCard({
               }}
             >
               <Progress type="dashboard" percent={newCustomer} size={148} />
-              <p>{translate('New Customer this Month')}</p>
+              <p>{translate('Nouveau client ce mois-ci')}</p>
               <Divider />
               <Statistic
-                title={translate('Active Customer')}
+                title={translate('Client actif')}
                 value={activeCustomer}
                 precision={2}
                 valueStyle={

@@ -93,13 +93,13 @@ export default function DashboardModule() {
       result: invoiceResult,
       isLoading: invoiceLoading,
       entity: 'invoice',
-      title: translate('Invoices'),
+      title: translate('Factures'),
     },
     {
       result: quoteResult,
       isLoading: quoteLoading,
       entity: 'quote',
-      title: translate('quote'),
+      title: translate('Devis'),
     },
   ];
 
@@ -129,26 +129,26 @@ export default function DashboardModule() {
       <>
         <Row gutter={[32, 32]}>
           <SummaryCard
-            title={translate('Invoices')}
-            prefix={translate('This month')}
+            title={translate('Factures')}
+            prefix={translate('Ce mois-ci')}
             isLoading={invoiceLoading}
             data={invoiceResult?.total}
           />
           <SummaryCard
-            title={translate('Quote')}
-            prefix={translate('This month')}
+            title={translate('Devis')}
+            prefix={translate('Ce mois-ci')}
             isLoading={quoteLoading}
             data={quoteResult?.total}
           />
           <SummaryCard
-            title={translate('paid')}
-            prefix={translate('This month')}
+            title={translate('Payé')}
+            prefix={translate('Ce mois-ci')}
             isLoading={paymentLoading}
             data={paymentResult?.total}
           />
           <SummaryCard
-            title={translate('Unpaid')}
-            prefix={translate('Not Paid')}
+            title={translate('Non Payé')}
+            prefix={translate('Non Payé')}
             isLoading={invoiceLoading}
             data={invoiceResult?.total_undue}
           />
@@ -175,7 +175,7 @@ export default function DashboardModule() {
           <Col className="gutter-row w-full" sm={{ span: 24 }} lg={{ span: 12 }}>
             <div className="whiteBox shadow pad20" style={{ height: '100%' }}>
               <h3 style={{ color: '#22075e', marginBottom: 5, padding: '0 20px 20px' }}>
-                {translate('Recent Invoices')}
+                {translate('Factures récentes')}
               </h3>
 
               <RecentTable entity={'invoice'} dataTableColumns={dataTableColumns} />
@@ -185,7 +185,7 @@ export default function DashboardModule() {
           <Col className="gutter-row w-full" sm={{ span: 24 }} lg={{ span: 12 }}>
             <div className="whiteBox shadow pad20" style={{ height: '100%' }}>
               <h3 style={{ color: '#22075e', marginBottom: 5, padding: '0 20px 20px' }}>
-                {translate('Recent Quotes')}
+                {translate('Devis récents')}
               </h3>
               <RecentTable entity={'quote'} dataTableColumns={dataTableColumns} />
             </div>
