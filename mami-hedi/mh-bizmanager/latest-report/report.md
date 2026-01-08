@@ -1,5 +1,5 @@
 % Statistics for mami-hedi/mh-bizmanager
-% Generated for [mami-hedi/mh-bizmanager](https://github.com/mami-hedi/mh-bizmanager) with [jgehrcke/github-repo-stats](https://github.com/jgehrcke/github-repo-stats) at 2026-01-07 23:54 UTC.
+% Generated for [mami-hedi/mh-bizmanager](https://github.com/mami-hedi/mh-bizmanager) with [jgehrcke/github-repo-stats](https://github.com/jgehrcke/github-repo-stats) at 2026-01-08 23:54 UTC.
 
 
 ## Views
